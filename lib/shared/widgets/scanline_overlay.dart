@@ -58,7 +58,8 @@ class _ScanlineOverlayState extends State<ScanlineOverlay>
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    _isForeground = WidgetsBinding.instance.lifecycleState == null ||
+    _isForeground =
+        WidgetsBinding.instance.lifecycleState == null ||
         WidgetsBinding.instance.lifecycleState == AppLifecycleState.resumed;
     _controller = AnimationController(
       vsync: this,
