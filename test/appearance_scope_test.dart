@@ -91,6 +91,42 @@ void main() {
       expect(scope.active, isFalse);
     });
 
+    testWidgets('pause the sweep in background and resume it', (tester) async {
+      late ScanlineScope scope;
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: ThemeData(brightness: Brightness.dark),
+          home: AppearanceScope(
+            labelFontSize: 28,
+            accentAvailable: false,
+            terminalPrompt: false,
+            animate: true,
+            child: ScanlineOverlay(
+              strength: 1,
+              child: Builder(
+                builder: (context) {
+                  scope = ScanlineScope.of(context)!;
+                  return const SizedBox.shrink();
+                },
+              ),
+            ),
+          ),
+        ),
+      );
+
+      await tester.pump(const Duration(seconds: 1));
+      tester.binding.handleAppLifecycleStateChanged(AppLifecycleState.paused);
+      await tester.pump();
+      final pausedAt = scope.bandY;
+      await tester.pump(const Duration(seconds: 1));
+      expect(scope.bandY, pausedAt);
+
+      tester.binding.handleAppLifecycleStateChanged(AppLifecycleState.resumed);
+      await tester.pump();
+      await tester.pump(const Duration(seconds: 1));
+      expect(scope.bandY, isNot(pausedAt));
+    });
+
     testWidgets('stay off at zero strength', (tester) async {
       final scope = await pumpOverlay(
         tester,
