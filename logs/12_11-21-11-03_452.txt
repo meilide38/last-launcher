@@ -1,0 +1,259 @@
+SDK: 33
+PRODUCT_NAME: xaga
+DEVICE_NAME: xaga
+BOARD_NAME: xaga
+SUPPORTED_ABIS: arm64-v8a, armeabi-v7a, armeabi
+MANUFACTURER: Xiaomi
+BRAND: Redmi
+MODEL: 22041216C
+
+1794489064.813 10414 15909 15923 D AppScoutStateMachine: 15909-ScoutStateMachinecreated
+1794489064.827 10414 15909 15909 D BufferQueueConsumer: [](id:3e250000000c,api:0,p:-1,c:15909) connect: controlledByApp=false
+1794489064.840 10414 15909 15909 D BufferQueueConsumer: [](id:3e250000000d,api:0,p:-1,c:15909) connect: controlledByApp=false
+1794489064.844 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794489064.844 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794489064.844 10414 15909 16078 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794489064.844 10414 15909 16078 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794489064.844 10414 15909 16078 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794489064.845 10414 15909 16078 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794489064.845 10414 15909 16078 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794489064.845 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794489064.845 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794489064.845 10414 15909 16078 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794489064.845 10414 15909 16078 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794489064.845 10414 15909 16078 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794489064.845 10414 15909 16078 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794489064.845 10414 15909 16078 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794489064.851 10414 15909 15909 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0xe20684e, mIsProjectionMode = false
+1794489064.851 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489064.851 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489064.851 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489064.853 10414 15909 15932 D BLASTBufferQueue: [VRI[MainActivity]#12](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=255495424240382(auto) mPendingTransactions.size=0 graphicBufferId=68328634712189 transform=0
+1794489064.858 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489064.858 10414 15909 16078 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#13](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=255495430031766(auto) mPendingTransactions.size=0 graphicBufferId=68328634712184 transform=0
+1794489064.875 10414 15909 15909 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794489064.875 10414 15909 15909 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794489064.875 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489064.925 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489064.940 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489066.547 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489066.552 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489066.621 10414 15909 15909 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794489066.622 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489066.623 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489066.624 10414 15909 15909 W FramePolicy: type=1400 audit(0.0:417074): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c158,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794489066.626 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489066.628 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489066.629 10414 15909 15909 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794489066.646 10414 15909 15909 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794489066.646 10414 15909 15909 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794489066.669 10414 15909 15909 D InsetsController: show(ime(), fromIme=true)
+1794489066.920 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489066.924 10414 15909 15909 D InsetsController: show(ime(), fromIme=true)
+1794489067.282 10414 15909 15909 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794489067.571 10414 15909 15909 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#13](f:0,a:1) destructor()
+1794489067.571 10414 15909 15909 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#13(BLAST Consumer)13](id:3e250000000d,api:0,p:-1,c:15909) disconnect
+1794489067.580 10414 15909 15909 W FramePolicy: type=1400 audit(0.0:417076): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c158,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794489067.583 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489067.598 10414 15909 15909 D BLASTBufferQueue: [VRI[MainActivity]#12](f:0,a:1) destructor()
+1794489067.598 10414 15909 15909 D BufferQueueConsumer: [VRI[MainActivity]#12(BLAST Consumer)12](id:3e250000000c,api:0,p:-1,c:15909) disconnect
+1794489068.067 10414 15909 15909 W Activity: PerfMonitor: Slow Operation: Activity nl.bw20.last_launcher/.MainActivity onStop took 466ms
+1794489068.077 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489068.076 10414 15909 15909 W FramePolicy: type=1400 audit(0.0:417077): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c158,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794489070.679 10414 15909 15922 D AppScoutStateMachine: 15909-ScoutStateMachinecreated
+1794489070.692 10414 15909 15909 W FramePolicy: type=1400 audit(0.0:417078): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c158,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794489070.695 10414 15909 15909 D BufferQueueConsumer: [](id:3e250000000e,api:0,p:-1,c:15909) connect: controlledByApp=false
+1794489070.695 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489070.697 10414 15909 15909 D BufferQueueConsumer: [](id:3e250000000f,api:0,p:-1,c:15909) connect: controlledByApp=false
+1794489070.698 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794489070.698 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794489070.698 10414 15909 16078 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794489070.698 10414 15909 16078 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794489070.698 10414 15909 16078 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794489070.698 10414 15909 16078 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794489070.698 10414 15909 16078 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794489070.698 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794489070.698 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794489070.698 10414 15909 16078 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794489070.698 10414 15909 16078 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794489070.698 10414 15909 16078 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794489070.698 10414 15909 16078 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794489070.698 10414 15909 16078 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794489070.704 10414 15909 15909 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0x4f89b12, mIsProjectionMode = false
+1794489070.704 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489070.704 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489070.705 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489070.707 10414 15909 15932 D BLASTBufferQueue: [VRI[MainActivity]#14](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=255501278140305(auto) mPendingTransactions.size=0 graphicBufferId=68328634712208 transform=0
+1794489070.710 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489070.710 10414 15909 16078 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#15](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=255501282100997(auto) mPendingTransactions.size=0 graphicBufferId=68328634712203 transform=0
+1794489070.713 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489070.732 10414 15909 15909 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794489070.732 10414 15909 15909 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794489070.732 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489070.776 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489070.794 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489071.288 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489071.349 10414 15909 15909 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794489071.349 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489071.351 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489071.353 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489071.361 10414 15909 15909 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794489071.384 10414 15909 15909 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794489071.384 10414 15909 15909 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794489071.414 10414 15909 15909 D InsetsController: show(ime(), fromIme=true)
+1794489071.648 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489071.652 10414 15909 15909 D InsetsController: show(ime(), fromIme=true)
+1794489072.126 10414 15909 15909 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794489072.384 10414 15909 15909 W FramePolicy: type=1400 audit(0.0:417079): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c158,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794489072.384 10414 15909 15909 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#15](f:0,a:1) destructor()
+1794489072.384 10414 15909 15909 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#15(BLAST Consumer)15](id:3e250000000f,api:0,p:-1,c:15909) disconnect
+1794489072.385 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489072.403 10414 15909 15909 D BLASTBufferQueue: [VRI[MainActivity]#14](f:0,a:1) destructor()
+1794489072.404 10414 15909 15909 D BufferQueueConsumer: [VRI[MainActivity]#14(BLAST Consumer)14](id:3e250000000e,api:0,p:-1,c:15909) disconnect
+1794489072.818 10414 15909 15909 W Activity: PerfMonitor: Slow Operation: Activity nl.bw20.last_launcher/.MainActivity onStop took 409ms
+1794489072.833 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489072.832 10414 15909 15909 W FramePolicy: type=1400 audit(0.0:417080): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c158,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794489074.961 10414 15909 15923 D AppScoutStateMachine: 15909-ScoutStateMachinecreated
+1794489074.972 10414 15909 15909 D BufferQueueConsumer: [](id:3e2500000010,api:0,p:-1,c:15909) connect: controlledByApp=false
+1794489074.974 10414 15909 15909 D BufferQueueConsumer: [](id:3e2500000011,api:0,p:-1,c:15909) connect: controlledByApp=false
+1794489074.976 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489074.978 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794489074.979 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794489074.979 10414 15909 16078 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794489074.979 10414 15909 16078 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794489074.979 10414 15909 16078 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794489074.979 10414 15909 16078 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794489074.979 10414 15909 16078 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794489074.979 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794489074.979 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794489074.979 10414 15909 16078 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794489074.979 10414 15909 16078 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794489074.979 10414 15909 16078 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794489074.979 10414 15909 16078 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794489074.979 10414 15909 16078 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794489074.987 10414 15909 15909 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0x1d0ea58, mIsProjectionMode = false
+1794489074.987 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489074.987 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489074.987 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489074.991 10414 15909 15932 D BLASTBufferQueue: [VRI[MainActivity]#16](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=255505561843151(auto) mPendingTransactions.size=0 graphicBufferId=68328634712227 transform=0
+1794489075.003 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489075.004 10414 15909 16078 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#17](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=255505575196921(auto) mPendingTransactions.size=0 graphicBufferId=68328634712222 transform=0
+1794489075.006 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489075.031 10414 15909 15909 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794489075.031 10414 15909 15909 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794489075.031 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489075.073 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489075.083 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489075.607 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489075.700 10414 15909 15909 W FramePolicy: type=1400 audit(0.0:417103): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c158,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794489075.704 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489075.706 10414 15909 15909 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794489075.706 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489075.707 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489075.711 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489075.715 10414 15909 15909 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794489075.735 10414 15909 15909 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794489075.735 10414 15909 15909 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794489075.782 10414 15909 15909 D InsetsController: show(ime(), fromIme=true)
+1794489075.997 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489076.000 10414 15909 15909 D InsetsController: show(ime(), fromIme=true)
+1794489076.612 10414 15909 15909 W FramePolicy: type=1400 audit(0.0:417104): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c158,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794489076.615 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489076.659 10414 15909 15909 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794489076.965 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489077.364 10414 15909 15909 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#17](f:0,a:1) destructor()
+1794489077.364 10414 15909 15909 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#17(BLAST Consumer)17](id:3e2500000011,api:0,p:-1,c:15909) disconnect
+1794489077.370 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489077.375 10414 15909 15909 D BLASTBufferQueue: [VRI[MainActivity]#16](f:0,a:1) destructor()
+1794489077.375 10414 15909 15909 D BufferQueueConsumer: [VRI[MainActivity]#16(BLAST Consumer)16](id:3e2500000010,api:0,p:-1,c:15909) disconnect
+1794489077.523 10414 15909 15909 D BufferQueueConsumer: [](id:3e2500000012,api:0,p:-1,c:15909) connect: controlledByApp=false
+1794489077.526 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489077.540 10414 15909 15909 D BufferQueueConsumer: [](id:3e2500000013,api:0,p:-1,c:15909) connect: controlledByApp=false
+1794489077.544 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794489077.544 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794489077.544 10414 15909 16078 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794489077.544 10414 15909 16078 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794489077.544 10414 15909 16078 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794489077.547 10414 15909 16078 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794489077.547 10414 15909 16078 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794489077.548 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794489077.548 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794489077.548 10414 15909 16078 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794489077.548 10414 15909 16078 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794489077.548 10414 15909 16078 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794489077.549 10414 15909 16078 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794489077.549 10414 15909 16078 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794489077.562 10414 15909 15909 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0x6b2b82, mIsProjectionMode = false
+1794489077.563 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489077.563 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489077.563 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489077.566 10414 15909 15932 D BLASTBufferQueue: [VRI[MainActivity]#18](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=255508137375075(auto) mPendingTransactions.size=0 graphicBufferId=68328634712246 transform=0
+1794489077.587 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489077.587 10414 15909 16078 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#19](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=255508158694536(auto) mPendingTransactions.size=0 graphicBufferId=68328634712241 transform=0
+1794489077.636 10414 15909 15909 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794489077.636 10414 15909 15909 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794489077.636 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489077.684 10414 15909 15909 W RemoteInputConnectionImpl: getTextBeforeCursor on inactive InputConnection
+1794489077.686 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489077.696 10414 15909 15909 W RemoteInputConnectionImpl: getTextAfterCursor on inactive InputConnection
+1794489077.708 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489078.314 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489078.321 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489078.356 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489078.357 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489078.365 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489078.369 10414 15909 15909 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794489078.376 10414 15909 15909 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794489078.376 10414 15909 15909 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794489078.416 10414 15909 15909 D InsetsController: show(ime(), fromIme=true)
+1794489078.652 10414 15909 15909 D InputMethodManager: showSoftInput() view=e0.r{bc5bf6f VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794489078.656 10414 15909 15909 D InsetsController: show(ime(), fromIme=true)
+1794489079.018 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489079.016 10414 15909 15909 W FramePolicy: type=1400 audit(0.0:417116): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c158,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794489079.026 10414 15909 15956 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794489079.024 10414 15909 15909 W FramePolicy: type=1400 audit(0.0:417117): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c158,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794489079.313 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489079.737 10414 15909 15909 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794489080.455 10414 15909 15909 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#19](f:0,a:1) destructor()
+1794489080.455 10414 15909 15909 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#19(BLAST Consumer)19](id:3e2500000013,api:0,p:-1,c:15909) disconnect
+1794489080.469 10414 15909 15909 D BLASTBufferQueue: [VRI[MainActivity]#18](f:0,a:1) destructor()
+1794489080.469 10414 15909 15909 D BufferQueueConsumer: [VRI[MainActivity]#18(BLAST Consumer)18](id:3e2500000012,api:0,p:-1,c:15909) disconnect
+1794489080.923 10414 15909 15923 D AppScoutStateMachine: 15909-ScoutStateMachinecreated
+1794489080.941 10414 15909 15909 W Activity: PerfMonitor: Slow Operation: Activity nl.bw20.last_launcher/.MainActivity onStop took 461ms
+1794489080.975 10414 15909 15909 D BufferQueueConsumer: [](id:3e2500000014,api:0,p:-1,c:15909) connect: controlledByApp=false
+1794489080.978 10414 15909 15909 D BufferQueueConsumer: [](id:3e2500000015,api:0,p:-1,c:15909) connect: controlledByApp=false
+1794489080.979 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794489080.979 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794489080.979 10414 15909 16078 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794489080.979 10414 15909 16078 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794489080.979 10414 15909 16078 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794489080.980 10414 15909 16078 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794489080.980 10414 15909 16078 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794489080.980 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794489080.980 10414 15909 16078 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794489080.980 10414 15909 16078 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794489080.980 10414 15909 16078 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794489080.980 10414 15909 16078 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794489080.980 10414 15909 16078 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794489080.980 10414 15909 16078 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794489080.991 10414 15909 15909 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0x4f03e1d, mIsProjectionMode = false
+1794489080.991 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489080.991 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489080.991 10414 15909 15909 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794489080.994 10414 15909 15932 D BLASTBufferQueue: [VRI[MainActivity]#20](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=255511565152998(auto) mPendingTransactions.size=0 graphicBufferId=68328634712265 transform=0
+1794489080.997 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489080.998 10414 15909 16078 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#21](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=255511569289921(auto) mPendingTransactions.size=0 graphicBufferId=68328634712260 transform=0
+1794489081.023 10414 15909 15909 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794489081.023 10414 15909 15909 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794489081.023 10414 15909 15909 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794489081.074 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489081.093 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489081.610 10414 15909 15909 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794489081.617 10414 15909 16078 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794489081.920 10414 15909 15909 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#21](f:0,a:1) destructor()
+1794489081.920 10414 15909 15909 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#21(BLAST Consumer)21](id:3e2500000015,api:0,p:-1,c:15909) disconnect
+1794489081.946 10414 15909 15909 D BLASTBufferQueue: [VRI[MainActivity]#20](f:0,a:1) destructor()
+1794489081.946 10414 15909 15909 D BufferQueueConsumer: [VRI[MainActivity]#20(BLAST Consumer)20](id:3e2500000014,api:0,p:-1,c:15909) disconnect
+1794489082.500 10414 15909 15909 W Activity: PerfMonitor: Slow Operation: Activity nl.bw20.last_launcher/.MainActivity onStop took 542ms
+1794489082.501 10414 15909 15909 I Choreographer: Skipped 66 frames!  The application may be doing too much work on its main thread.
+1794489082.511 10414 15909 15909 W Looper  : PerfMonitor doFrame : time=10ms vsyncFrame=0 latency=550ms procState=-1 historyMsgCount=5 (msgIndex=1 wall=550ms seq=4901 late=33ms h=android.app.ActivityThread$H w=159)
