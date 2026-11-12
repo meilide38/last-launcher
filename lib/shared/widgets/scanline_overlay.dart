@@ -48,14 +48,18 @@ class ScanlineOverlay extends StatefulWidget {
 }
 
 class _ScanlineOverlayState extends State<ScanlineOverlay>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin, WidgetsBindingObserver {
   late final AnimationController _controller;
   bool _active = false;
   bool _sweep = false;
+  bool _isForeground = true;
 
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    _isForeground = WidgetsBinding.instance.lifecycleState == null ||
+        WidgetsBinding.instance.lifecycleState == AppLifecycleState.resumed;
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 8),
@@ -74,10 +78,19 @@ class _ScanlineOverlayState extends State<ScanlineOverlay>
     _sync();
   }
 
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    _isForeground = state == AppLifecycleState.resumed;
+    _sync();
+  }
+
   void _sync() {
     _active =
         widget.strength > 0 && Theme.of(context).brightness == Brightness.dark;
-    _sweep = _active && AppearanceScope.of(context).animate;
+    // A launcher spends much of its life behind other apps. Keep the static
+    // scanlines if enabled, but stop the continuously repainting sweep until
+    // Android brings the activity back to the foreground.
+    _sweep = _active && _isForeground && AppearanceScope.of(context).animate;
     if (!_sweep && _controller.isAnimating) {
       _controller.stop();
     } else if (_sweep && !_controller.isAnimating) {
@@ -87,6 +100,7 @@ class _ScanlineOverlayState extends State<ScanlineOverlay>
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     _controller.dispose();
     super.dispose();
   }
