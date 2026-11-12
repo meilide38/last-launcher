@@ -1,0 +1,1291 @@
+SDK: 33
+PRODUCT_NAME: xaga
+DEVICE_NAME: xaga
+BOARD_NAME: xaga
+SUPPORTED_ABIS: arm64-v8a, armeabi-v7a, armeabi
+MANUFACTURER: Xiaomi
+BRAND: Redmi
+MODEL: 22041216C
+
+1794485011.748 10410 17463 23365 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794485011.769 10410 17463 17463 D BufferQueueConsumer: [](id:443700000086,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485011.771 10410 17463 17463 D BufferQueueConsumer: [](id:443700000087,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485011.772 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485011.772 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485011.772 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485011.772 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485011.772 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485011.772 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485011.772 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485011.772 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485011.772 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485011.772 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485011.772 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485011.772 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485011.772 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485011.772 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485011.785 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0xc93693e, mIsProjectionMode = false
+1794485011.785 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485011.785 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485011.785 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485011.788 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#134](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251442359775525(auto) mPendingTransactions.size=0 graphicBufferId=75003013891323 transform=0
+1794485011.793 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485011.793 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#135](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251442365145601(auto) mPendingTransactions.size=0 graphicBufferId=75003013891318 transform=0
+1794485011.810 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794485011.810 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485011.810 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485012.046 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485012.064 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485012.601 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485012.610 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485012.610 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485012.611 10410 17463 17463 W ResourcesManager: failed to preload asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485012.611 10410 17463 17463 W ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.createApkAssetsSupplierNotLocked(ResourcesManager.java:1027)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1148)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485012.611 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485012.611 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485012.611 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485012.612 10410 17463 17463 E ResourcesManager: failed to add asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485012.612 10410 17463 17463 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:569)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:651)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:706)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1058)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1161)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485012.612 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485012.612 10410 17463 17463 W PackageManager: Failure retrieving resources for tech.lolli.toolbox
+1794485012.616 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485012.660 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485012.660 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485012.662 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485012.664 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485012.670 10410 17463 17463 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794485012.692 10410 17463 17463 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794485012.692 10410 17463 17463 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794485012.716 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485012.958 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485012.962 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485013.835 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485015.716 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413498): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485015.717 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485015.753 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794485016.436 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413500): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485016.435 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#135](f:0,a:1) destructor()
+1794485016.435 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#135(BLAST Consumer)135](id:443700000087,api:0,p:-1,c:17463) disconnect
+1794485016.439 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485016.446 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#134](f:0,a:1) destructor()
+1794485016.446 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#134(BLAST Consumer)134](id:443700000086,api:0,p:-1,c:17463) disconnect
+1794485016.514 10410 17463 23365 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794485016.524 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413501): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485016.527 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485016.527 10410 17463 17463 D BufferQueueConsumer: [](id:443700000088,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485016.531 10410 17463 17463 D BufferQueueConsumer: [](id:443700000089,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485016.533 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485016.533 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485016.533 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485016.533 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485016.533 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485016.533 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485016.533 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485016.534 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485016.534 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485016.534 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485016.534 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485016.534 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485016.534 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485016.534 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485016.540 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0x9363d9c, mIsProjectionMode = false
+1794485016.540 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485016.540 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485016.540 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485016.542 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#136](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251447113919448(auto) mPendingTransactions.size=0 graphicBufferId=75003013891341 transform=0
+1794485016.546 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485016.546 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#137](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251447118105909(auto) mPendingTransactions.size=0 graphicBufferId=75003013891336 transform=0
+1794485016.575 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794485016.575 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485016.575 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485016.616 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485016.633 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485017.036 10410 17463 17472 I 0.last_launcher: This is sticky GC, maxfree is 33554432 minfree is 8388608
+1794485017.568 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485017.569 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485017.569 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485017.569 10410 17463 17463 W ResourcesManager: failed to preload asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485017.569 10410 17463 17463 W ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.createApkAssetsSupplierNotLocked(ResourcesManager.java:1027)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1148)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485017.569 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485017.569 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485017.569 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485017.569 10410 17463 17463 E ResourcesManager: failed to add asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485017.569 10410 17463 17463 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:569)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:651)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:706)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1058)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1161)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485017.569 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485017.569 10410 17463 17463 W PackageManager: Failure retrieving resources for tech.lolli.toolbox
+1794485017.569 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485017.569 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485017.572 10410 17463 17463 W ResourcesManager: failed to preload asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485017.572 10410 17463 17463 W ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.createApkAssetsSupplierNotLocked(ResourcesManager.java:1027)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1148)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.content.pm.ComponentInfo.loadUnsafeLabel(ComponentInfo.java:139)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.content.pm.PackageItemInfo.loadLabel(PackageItemInfo.java:212)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:238)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485017.572 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485017.572 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485017.572 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485017.573 10410 17463 17463 E ResourcesManager: failed to add asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485017.573 10410 17463 17463 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:569)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:651)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:706)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1058)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1161)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.content.pm.ComponentInfo.loadUnsafeLabel(ComponentInfo.java:139)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.content.pm.PackageItemInfo.loadLabel(PackageItemInfo.java:212)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:238)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485017.573 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485017.573 10410 17463 17463 W PackageManager: Failure retrieving resources for tech.lolli.toolbox
+1794485017.585 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485017.616 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485017.616 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485017.617 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485017.619 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485017.625 10410 17463 17463 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794485017.653 10410 17463 17463 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794485017.653 10410 17463 17463 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794485017.683 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485017.691 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485017.916 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485017.923 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485018.925 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485018.924 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413502): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485018.949 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794485019.277 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485019.689 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#137](f:0,a:1) destructor()
+1794485019.689 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#137(BLAST Consumer)137](id:443700000089,api:0,p:-1,c:17463) disconnect
+1794485019.696 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413505): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485019.700 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485019.706 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#136](f:0,a:1) destructor()
+1794485019.707 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#136(BLAST Consumer)136](id:443700000088,api:0,p:-1,c:17463) disconnect
+1794485019.918 10410 17463 17481 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794485019.933 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485019.932 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413506): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485019.935 10410 17463 17463 D BufferQueueConsumer: [](id:44370000008a,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485019.939 10410 17463 17463 D BufferQueueConsumer: [](id:44370000008b,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485019.941 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485019.941 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485019.941 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485019.941 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485019.941 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485019.941 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485019.941 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485019.942 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485019.942 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485019.942 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485019.942 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485019.942 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485019.942 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485019.942 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485019.950 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0xe647f3f, mIsProjectionMode = false
+1794485019.950 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485019.950 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485019.950 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485019.952 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#138](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251450523901987(auto) mPendingTransactions.size=0 graphicBufferId=75003013891360 transform=0
+1794485019.957 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485019.957 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251450528633679(auto) mPendingTransactions.size=0 graphicBufferId=75003013891355 transform=0
+1794485019.975 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794485019.975 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485019.975 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485020.185 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485020.197 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485020.629 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485020.631 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485020.631 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485020.632 10410 17463 17463 W ResourcesManager: failed to preload asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485020.632 10410 17463 17463 W ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.createApkAssetsSupplierNotLocked(ResourcesManager.java:1027)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1148)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485020.632 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485020.632 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485020.632 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485020.632 10410 17463 17463 E ResourcesManager: failed to add asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485020.632 10410 17463 17463 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:569)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:651)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:706)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1058)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1161)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485020.632 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485020.632 10410 17463 17463 W PackageManager: Failure retrieving resources for tech.lolli.toolbox
+1794485020.635 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485020.691 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485020.691 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485020.694 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485020.702 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485020.706 10410 17463 17463 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794485020.734 10410 17463 17463 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794485020.734 10410 17463 17463 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794485020.763 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485020.987 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485020.992 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485021.462 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.462 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.462 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.496 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.496 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.496 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.503 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.503 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.503 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.512 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.512 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.512 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.519 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.519 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.519 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.528 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.528 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.528 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.536 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.536 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.536 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.545 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.545 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.545 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.553 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.553 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.553 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.561 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.561 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.561 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.569 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.569 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.569 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.579 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.579 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.579 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.586 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.586 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.586 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.594 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.594 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.594 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.612 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.612 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.612 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.619 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.619 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.619 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.627 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.627 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.627 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.637 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.637 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.637 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.644 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.644 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.644 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.652 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.652 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.652 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.661 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.661 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.661 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.669 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.669 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.669 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.687 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.687 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.687 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.694 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.694 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.694 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.703 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.703 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.703 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.710 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.710 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.710 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.719 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.719 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.719 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.728 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.728 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.728 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.735 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.735 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.735 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.743 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.743 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.743 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.752 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.752 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.752 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.761 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.761 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.761 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.770 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.770 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.770 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.776 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.777 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.777 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.785 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.786 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.786 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.793 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.793 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.793 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.803 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.803 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.803 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.809 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.809 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.809 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.818 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.818 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.818 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.826 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.826 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.826 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.834 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.834 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.834 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.843 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.843 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.843 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.851 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.851 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.851 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.861 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.861 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.861 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.867 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.867 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.867 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.875 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.875 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.875 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.884 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.884 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.884 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.893 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.893 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.893 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.901 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.901 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.901 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.909 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.909 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.909 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.917 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.917 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.917 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.925 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.925 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.925 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.937 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.937 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.937 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.942 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.942 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.942 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.950 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.950 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.950 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.958 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.958 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.958 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.967 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.967 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.967 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.975 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.975 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.975 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.983 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.983 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.983 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485021.992 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485021.992 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485021.992 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.000 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.000 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.000 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.010 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.010 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.010 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.018 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.018 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.018 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.025 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.025 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.025 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.034 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.034 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.034 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.042 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.042 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.042 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.050 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.050 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.050 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.059 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.059 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.059 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.067 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.067 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.067 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.075 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.075 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.075 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.085 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.085 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.085 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.093 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.093 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.093 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.100 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.100 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.100 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.108 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.108 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.108 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.115 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.115 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.115 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.125 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.125 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.125 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.132 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.132 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.132 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.141 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.141 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.141 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.150 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485022.150 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139] Error acquiring buffer: Unknown error -38 (-38)
+1794485022.150 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485022.194 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794485022.260 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413507): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485022.260 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485022.316 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413508): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485022.317 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485022.368 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413509): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485022.370 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485022.400 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413510): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485022.401 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485022.502 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485022.882 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139](f:0,a:1) destructor()
+1794485022.883 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#139(BLAST Consumer)139](id:44370000008b,api:0,p:-1,c:17463) disconnect
+1794485022.887 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485022.884 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413511): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485022.897 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#138](f:0,a:1) destructor()
+1794485022.898 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#138(BLAST Consumer)138](id:44370000008a,api:0,p:-1,c:17463) disconnect
+1794485023.022 10410 17463 17463 W Activity: PerfMonitor: Slow Operation: Activity nl.bw20.last_launcher/.MainActivity onStop took 119ms
+1794485024.819 10410 17463 17463 D BufferQueueConsumer: [](id:44370000008c,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485024.836 10410 17463 19446 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794485024.840 10410 17463 17463 D BufferQueueConsumer: [](id:44370000008d,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485024.841 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485024.841 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485024.841 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485024.841 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485024.841 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485024.842 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485024.842 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485024.846 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485024.846 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485024.846 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485024.846 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485024.846 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485024.846 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485024.846 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485024.862 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0x31e0f9b, mIsProjectionMode = false
+1794485024.862 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485024.862 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485024.862 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485024.918 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#140](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251455488690218(auto) mPendingTransactions.size=0 graphicBufferId=75003013891379 transform=0
+1794485024.959 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485024.959 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#141](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251455530643525(auto) mPendingTransactions.size=0 graphicBufferId=75003013891374 transform=0
+1794485024.991 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794485024.991 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485024.991 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485024.993 10410 17463 17463 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=251455394000000, downTime=251455329000000, deviceId=-1, source=0x101, displayId=0 }, phoneEventTime=20:03:44.823
+1794485025.069 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485025.092 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485025.753 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485025.756 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485025.756 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485025.756 10410 17463 17463 W ResourcesManager: failed to preload asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485025.756 10410 17463 17463 W ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.createApkAssetsSupplierNotLocked(ResourcesManager.java:1027)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1148)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485025.756 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485025.756 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485025.757 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485025.757 10410 17463 17463 E ResourcesManager: failed to add asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485025.757 10410 17463 17463 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:569)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:651)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:706)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1058)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1161)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485025.757 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485025.757 10410 17463 17463 W PackageManager: Failure retrieving resources for tech.lolli.toolbox
+1794485025.761 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485025.810 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485025.810 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485025.812 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485025.817 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485025.821 10410 17463 17463 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794485025.850 10410 17463 17463 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794485025.850 10410 17463 17463 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794485025.906 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485025.916 10410 17463 17538 W RenderInspector: DequeueBuffer time out on nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity, count=1, avg=28 ms, max=28 ms.
+1794485026.109 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485026.111 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485030.088 10410 17463 17463 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=251460652000000, downTime=251460652000000, deviceId=-1, source=0x101, displayId=0 }, phoneEventTime=20:03:50.080
+1794485030.117 10410 17463 17463 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=251460686000000, downTime=251460652000000, deviceId=-1, source=0x101, displayId=0 }, phoneEventTime=20:03:50.115
+1794485030.394 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485032.707 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485032.723 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794485033.446 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#141](f:0,a:1) destructor()
+1794485033.447 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#141(BLAST Consumer)141](id:44370000008d,api:0,p:-1,c:17463) disconnect
+1794485033.475 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#140](f:0,a:1) destructor()
+1794485033.475 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#140(BLAST Consumer)140](id:44370000008c,api:0,p:-1,c:17463) disconnect
+1794485033.913 10410 17463 17463 W Activity: PerfMonitor: Slow Operation: Activity nl.bw20.last_launcher/.MainActivity onStop took 432ms
+1794485036.157 10410 17463 19446 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794485036.173 10410 17463 17463 D BufferQueueConsumer: [](id:44370000008e,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485036.174 10410 17463 17463 D BufferQueueConsumer: [](id:44370000008f,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485036.175 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485036.175 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485036.175 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485036.175 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485036.175 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485036.175 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485036.175 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485036.176 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485036.176 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485036.176 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485036.176 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485036.176 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485036.176 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485036.176 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485036.183 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0x9f7bd47, mIsProjectionMode = false
+1794485036.183 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485036.183 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485036.184 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485036.186 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#142](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251466757508064(auto) mPendingTransactions.size=0 graphicBufferId=75003013891398 transform=0
+1794485036.190 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485036.190 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251466761413064(auto) mPendingTransactions.size=0 graphicBufferId=75003013891393 transform=0
+1794485036.209 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794485036.209 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485036.209 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485036.260 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485036.273 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485036.814 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485036.816 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485036.816 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485036.816 10410 17463 17463 W ResourcesManager: failed to preload asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485036.816 10410 17463 17463 W ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.createApkAssetsSupplierNotLocked(ResourcesManager.java:1027)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1148)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485036.816 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485036.816 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485036.816 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485036.816 10410 17463 17463 E ResourcesManager: failed to add asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485036.816 10410 17463 17463 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:569)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:651)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:706)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1058)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1161)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485036.816 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485036.816 10410 17463 17463 W PackageManager: Failure retrieving resources for tech.lolli.toolbox
+1794485036.821 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485036.858 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485036.858 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485036.860 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485036.860 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413545): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485036.864 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485036.868 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485036.875 10410 17463 17463 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794485036.897 10410 17463 17463 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794485036.897 10410 17463 17463 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794485036.920 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485036.949 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485037.155 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485037.158 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485037.168 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.168 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.168 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.178 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.178 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.178 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.185 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.185 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.185 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.193 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.193 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.193 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.202 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.202 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.202 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.210 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.210 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.210 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.218 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.218 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.218 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.227 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.227 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.227 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.234 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.234 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.234 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.242 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.242 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.242 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.251 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.251 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.251 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.258 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.258 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.258 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.267 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.267 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.267 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.275 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.275 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.275 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.284 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.284 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.284 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.291 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.291 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.291 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.300 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.300 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.300 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.308 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.308 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.308 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.316 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.316 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.316 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.325 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.325 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.325 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.333 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.333 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.333 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.342 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.342 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.342 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.350 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.350 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.350 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.358 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.358 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.358 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.366 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.366 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.366 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.374 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.374 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.374 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.383 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.383 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.383 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.391 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.391 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.391 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.399 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.399 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.399 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.408 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.408 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.408 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.416 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.416 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.416 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.424 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.424 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.424 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.432 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.432 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.432 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.441 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.441 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.441 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.450 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.450 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.450 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.457 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.457 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.457 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.465 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.465 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.465 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.474 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.474 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.474 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.482 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.482 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.482 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.490 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.490 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.490 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.498 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.498 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.498 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.507 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.507 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.507 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.515 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.515 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.515 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.524 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.524 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.524 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.532 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.532 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.532 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.541 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.541 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.541 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.548 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.548 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.548 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.556 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.556 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.556 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.565 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.565 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.565 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.573 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.573 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.573 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.582 10410 17463 17577 E BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:1,p:17463,c:17463) acquireBuffer: max acquired buffer count reached: 4 (max 2)
+1794485037.582 10410 17463 17577 E BufferItemConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143] Error acquiring buffer: Unknown error -38 (-38)
+1794485037.582 10410 17463 17577 E BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:1,a:4) Failed to acquire a buffer, err=INVALID_OPERATION
+1794485037.620 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413546): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485037.648 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413547): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485037.621 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485037.650 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485037.887 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485039.001 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794485039.727 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143](f:0,a:1) destructor()
+1794485039.727 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#143(BLAST Consumer)143](id:44370000008f,api:0,p:-1,c:17463) disconnect
+1794485039.739 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#142](f:0,a:1) destructor()
+1794485039.739 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#142(BLAST Consumer)142](id:44370000008e,api:0,p:-1,c:17463) disconnect
+1794485043.635 10410 17463 17481 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794485043.651 10410 17463 17463 D BufferQueueConsumer: [](id:443700000090,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485043.653 10410 17463 17463 D BufferQueueConsumer: [](id:443700000091,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485043.654 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485043.654 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485043.654 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485043.654 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485043.654 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485043.654 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485043.654 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485043.656 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485043.656 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485043.656 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485043.656 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485043.656 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485043.657 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485043.657 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485043.666 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0x6d2f46e, mIsProjectionMode = false
+1794485043.666 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485043.668 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485043.669 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485043.671 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#144](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251474242890296(auto) mPendingTransactions.size=0 graphicBufferId=75003013891417 transform=0
+1794485043.676 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485043.676 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#145](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251474248051757(auto) mPendingTransactions.size=0 graphicBufferId=75003013891412 transform=0
+1794485043.693 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794485043.693 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485043.693 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485043.732 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485043.748 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485044.703 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485044.706 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485044.706 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485044.707 10410 17463 17463 W ResourcesManager: failed to preload asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485044.707 10410 17463 17463 W ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.createApkAssetsSupplierNotLocked(ResourcesManager.java:1027)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1148)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485044.707 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485044.707 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485044.707 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485044.707 10410 17463 17463 E ResourcesManager: failed to add asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485044.707 10410 17463 17463 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:569)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:651)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:706)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1058)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1161)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485044.707 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485044.707 10410 17463 17463 W PackageManager: Failure retrieving resources for tech.lolli.toolbox
+1794485044.710 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485044.762 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485044.762 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485044.764 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485044.767 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485044.768 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485044.771 10410 17463 17463 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794485044.796 10410 17463 17463 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794485044.796 10410 17463 17463 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794485044.818 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485044.833 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485045.058 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485045.061 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485045.625 10410 17463 17463 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity', KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=251476193000000, downTime=251476193000000, deviceId=-1, source=0x101, displayId=0 }, phoneEventTime=20:04:05.622
+1794485045.658 10410 17463 17472 I 0.last_launcher: This is sticky GC, maxfree is 33554432 minfree is 8388608
+1794485045.672 10410 17463 17463 D MIUIInput: [KeyEvent] ViewRootImpl windowName 'nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity', KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x48, repeatCount=0, eventTime=251476239000000, downTime=251476193000000, deviceId=-1, source=0x101, displayId=0 }, phoneEventTime=20:04:05.668
+1794485045.933 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485046.044 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485049.261 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794485049.939 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#145](f:0,a:1) destructor()
+1794485049.940 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#145(BLAST Consumer)145](id:443700000091,api:0,p:-1,c:17463) disconnect
+1794485049.951 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#144](f:0,a:1) destructor()
+1794485049.952 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#144(BLAST Consumer)144](id:443700000090,api:0,p:-1,c:17463) disconnect
+1794485055.018 10410 17463 17472 I 0.last_launcher: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+1794485067.882 10410 17463 17481 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794485067.898 10410 17463 17463 D BufferQueueConsumer: [](id:443700000092,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485067.900 10410 17463 17463 D BufferQueueConsumer: [](id:443700000093,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485067.903 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485067.903 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485067.903 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485067.903 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485067.903 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485067.904 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485067.904 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485067.905 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485067.905 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485067.905 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485067.905 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485067.905 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485067.905 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485067.905 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485067.912 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0xa36a03a, mIsProjectionMode = false
+1794485067.912 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485067.913 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485067.913 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485067.916 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#146](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251498487057989(auto) mPendingTransactions.size=0 graphicBufferId=75003013891435 transform=0
+1794485067.921 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485067.921 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#147](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251498492452374(auto) mPendingTransactions.size=0 graphicBufferId=75003013891430 transform=0
+1794485067.935 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794485067.935 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485067.935 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485068.181 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485068.198 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485068.758 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485068.762 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485068.762 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485068.762 10410 17463 17463 W ResourcesManager: failed to preload asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485068.762 10410 17463 17463 W ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.createApkAssetsSupplierNotLocked(ResourcesManager.java:1027)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1148)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485068.762 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485068.763 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794485068.763 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794485068.763 10410 17463 17463 E ResourcesManager: failed to add asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794485068.763 10410 17463 17463 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:569)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:651)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:706)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1058)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1161)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794485068.763 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794485068.763 10410 17463 17463 W PackageManager: Failure retrieving resources for tech.lolli.toolbox
+1794485068.765 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485068.792 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485068.792 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485068.793 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485068.798 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485068.796 10410 17463 17463 W FramePolicy: type=1400 audit(0.0:413605): avc: denied { ioctl } for path="/proc/perfmgr/perf_ioctl" dev="proc" ino=4026535431 ioctlcmd=0x6716 scontext=u:r:untrusted_app:s0:c154,c257,c512,c768 tcontext=u:object_r:proc_perfmgr:s0 tclass=file permissive=0 app=nl.bw20.last_launcher
+1794485068.799 10410 17463 17536 I libPerfCtl: fbcNotifySbeRescue ret=-1
+1794485068.800 10410 17463 17463 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794485068.822 10410 17463 17463 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794485068.822 10410 17463 17463 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794485068.844 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485069.089 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794485069.092 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794485073.662 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794485073.972 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#147](f:0,a:1) destructor()
+1794485073.972 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#147(BLAST Consumer)147](id:443700000093,api:0,p:-1,c:17463) disconnect
+1794485073.988 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#146](f:0,a:1) destructor()
+1794485073.988 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#146(BLAST Consumer)146](id:443700000092,api:0,p:-1,c:17463) disconnect
+1794485079.044 10410 17463 17472 I 0.last_launcher: This is non sticky GC, maxfree is 33554432 minfree is 8388608

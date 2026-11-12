@@ -1,0 +1,160 @@
+SDK: 33
+PRODUCT_NAME: xaga
+DEVICE_NAME: xaga
+BOARD_NAME: xaga
+SUPPORTED_ABIS: arm64-v8a, armeabi-v7a, armeabi
+MANUFACTURER: Xiaomi
+BRAND: Redmi
+MODEL: 22041216C
+
+1794486578.317 10410 17463 19446 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794486578.336 10410 17463 17463 D BufferQueueConsumer: [](id:4437000000ae,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794486578.338 10410 17463 17463 D BufferQueueConsumer: [](id:4437000000af,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794486578.339 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794486578.339 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794486578.339 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794486578.339 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794486578.339 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794486578.339 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794486578.339 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794486578.339 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794486578.339 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794486578.339 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794486578.339 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794486578.339 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794486578.339 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794486578.339 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794486578.349 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0xa1312c8, mIsProjectionMode = false
+1794486578.349 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794486578.349 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794486578.349 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794486578.351 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#174](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=253008922429464(auto) mPendingTransactions.size=0 graphicBufferId=75003013891697 transform=0
+1794486578.355 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794486578.355 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#175](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=253008926823233(auto) mPendingTransactions.size=0 graphicBufferId=75003013891692 transform=0
+1794486578.370 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794486578.370 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794486578.370 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794486578.411 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794486578.427 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794486579.030 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794486579.040 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794486579.347 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#175](f:0,a:1) destructor()
+1794486579.347 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#175(BLAST Consumer)175](id:4437000000af,api:0,p:-1,c:17463) disconnect
+1794486579.359 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#174](f:0,a:1) destructor()
+1794486579.359 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#174(BLAST Consumer)174](id:4437000000ae,api:0,p:-1,c:17463) disconnect
+1794486580.873 10410 17463 19446 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794486585.979 10410 17463 17472 I 0.last_launcher: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+1794487162.272 10410 17463 17480 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794487162.304 10410 17463 17463 D BufferQueueConsumer: [](id:4437000000b0,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794487162.308 10410 17463 17463 D BufferQueueConsumer: [](id:4437000000b1,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794487162.312 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794487162.312 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794487162.312 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794487162.312 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794487162.312 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794487162.312 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794487162.312 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794487162.313 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794487162.313 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794487162.313 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794487162.313 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794487162.313 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794487162.313 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794487162.313 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794487162.334 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0xb0480d3, mIsProjectionMode = false
+1794487162.334 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794487162.334 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794487162.334 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794487162.337 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#176](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=253592908324499(auto) mPendingTransactions.size=0 graphicBufferId=75003013891714 transform=0
+1794487162.345 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794487162.345 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#177](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=253592917005499(auto) mPendingTransactions.size=0 graphicBufferId=75003013891709 transform=0
+1794487162.367 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794487162.367 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794487162.367 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794487164.121 10410 17463 17463 W Looper  : PerfMonitor longMsg : seq=67077 plan=20:39:22.367 late=2ms wall=1752ms running=0ms h=android.os.Handler c=g0.c procState=-1
+1794487164.127 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794487164.153 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794487164.156 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794487164.157 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794487164.159 10410 17463 17463 W ResourcesManager: failed to preload asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794487164.159 10410 17463 17463 W ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.createApkAssetsSupplierNotLocked(ResourcesManager.java:1027)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1148)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794487164.159 10410 17463 17463 W ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794487164.159 10410 17463 17463 W ziparchive: Unable to open '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': No such file or directory
+1794487164.159 10410 17463 17463 E 0.last_launcher: Failed to open APK '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk': I/O error
+1794487164.159 10410 17463 17463 E ResourcesManager: failed to add asset path '/data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk'
+1794487164.159 10410 17463 17463 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~Nn109rqhPPtZZNdmcMnwbQ==/tech.lolli.toolbox-mdR5jb-8rkb0CZ5FiFVhHg==/base.apk
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:296)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:145)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:482)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.-$$Nest$mloadApkAssets(Unknown Source:0)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:177)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:569)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:651)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:706)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1058)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1161)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:2563)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2075)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2061)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2382)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.content.pm.ResolveInfo.loadLabel(ResolveInfo.java:232)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at s0.a.f(SourceFile:119)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at o0.d.e(SourceFile:48)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at o0.d.h(SourceFile:778)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at M.Q.l(SourceFile:28)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at g0.c.run(SourceFile:128)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loopOnce(Looper.java:210)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.os.Looper.loop(Looper.java:299)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at android.app.ActivityThread.main(ActivityThread.java:8136)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at java.lang.reflect.Method.invoke(Native Method)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+1794487164.159 10410 17463 17463 E ResourcesManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1028)
+1794487164.159 10410 17463 17463 W PackageManager: Failure retrieving resources for tech.lolli.toolbox
+1794487164.168 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794487164.168 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794487164.168 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794487164.170 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794487164.186 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F....ID 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794487164.188 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794487164.192 10410 17463 17463 I AssistStructure: Flattened final assist data: 388 bytes, containing 1 windows, 3 views
+1794487164.220 10410 17463 17463 W OnBackInvokedCallback: OnBackInvokedCallback is not enabled for the application.
+1794487164.220 10410 17463 17463 W OnBackInvokedCallback: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+1794487164.244 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794487164.263 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794487164.273 10410 17463 17538 W RenderInspector: QueueBuffer time out on nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity, count=1, avg=14 ms, max=14 ms.
+1794487164.457 10410 17463 17463 D InputMethodManager: showSoftInput() view=e0.r{7d10465 VFED..... .F...... 0,0-1080,2460 #1 aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+1794487164.461 10410 17463 17463 D InsetsController: show(ime(), fromIme=true)
+1794487166.107 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794487166.410 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794487166.858 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#177](f:0,a:1) destructor()
+1794487166.858 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#177(BLAST Consumer)177](id:4437000000b1,api:0,p:-1,c:17463) disconnect
+1794487166.862 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#176](f:0,a:1) destructor()
+1794487166.862 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#176(BLAST Consumer)176](id:4437000000b0,api:0,p:-1,c:17463) disconnect

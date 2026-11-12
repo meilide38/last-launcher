@@ -1,0 +1,79 @@
+SDK: 33
+PRODUCT_NAME: xaga
+DEVICE_NAME: xaga
+BOARD_NAME: xaga
+SUPPORTED_ABIS: arm64-v8a, armeabi-v7a, armeabi
+MANUFACTURER: Xiaomi
+BRAND: Redmi
+MODEL: 22041216C
+
+1794485202.637 10410 17463 23365 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794485202.655 10410 17463 17463 D BufferQueueConsumer: [](id:44370000009e,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485202.656 10410 17463 17463 D BufferQueueConsumer: [](id:44370000009f,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485202.657 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485202.657 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485202.657 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485202.657 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485202.657 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485202.657 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485202.657 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485202.657 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485202.657 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485202.657 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485202.657 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485202.657 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485202.657 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485202.657 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485202.665 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0xe780d8b, mIsProjectionMode = false
+1794485202.665 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485202.666 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485202.666 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485202.668 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#158](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251633239971459(auto) mPendingTransactions.size=0 graphicBufferId=75003013891549 transform=0
+1794485202.672 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485202.672 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#159](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251633243944690(auto) mPendingTransactions.size=0 graphicBufferId=75003013891544 transform=0
+1794485202.695 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794485202.695 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485202.695 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485202.731 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485202.742 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485203.739 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794485203.744 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485203.990 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#159](f:0,a:1) destructor()
+1794485203.990 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#159(BLAST Consumer)159](id:44370000009f,api:0,p:-1,c:17463) disconnect
+1794485203.998 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#158](f:0,a:1) destructor()
+1794485203.999 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#158(BLAST Consumer)158](id:44370000009e,api:0,p:-1,c:17463) disconnect
+1794485206.109 10410 17463 19446 D AppScoutStateMachine: 17463-ScoutStateMachinecreated
+1794485206.121 10410 17463 17463 D BufferQueueConsumer: [](id:4437000000a0,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485206.123 10410 17463 17463 D BufferQueueConsumer: [](id:4437000000a1,api:0,p:-1,c:17463) connect: controlledByApp=false
+1794485206.124 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485206.124 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485206.124 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485206.124 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485206.124 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485206.124 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485206.124 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485206.125 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 38
+1794485206.125 10410 17463 17577 E gralloc4: ERROR: Format allocation info not found for format: 0
+1794485206.125 10410 17463 17577 E gralloc4: Invalid base format! req_base_format = 0x0, req_format = 0x38, type = 0x0
+1794485206.125 10410 17463 17577 E gralloc4: ERROR: Unrecognized and/or unsupported format 0x38 and usage 0xb00
+1794485206.125 10410 17463 17577 E Gralloc4: isSupported(1, 1, 56, 1, ...) failed with 5
+1794485206.125 10410 17463 17577 E GraphicBufferAllocator: Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 5
+1794485206.125 10410 17463 17577 E AHardwareBuffer: GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -5), handle=0x0
+1794485206.137 10410 17463 17463 D SurfaceView: UPDATE Surface(name=SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity])/@0x138b0a, mIsProjectionMode = false
+1794485206.137 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485206.137 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485206.137 10410 17463 17463 D SurfaceControl: nativeSetScreenProjection ===> setScreenProjection
+1794485206.139 10410 17463 17538 D BLASTBufferQueue: [VRI[MainActivity]#160](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251636710707844(auto) mPendingTransactions.size=0 graphicBufferId=75003013891566 transform=0
+1794485206.146 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485206.146 10410 17463 17577 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#161](f:0,a:1) acquireNextBufferLocked size=1080x2460 mFrameNumber=1 applyTransaction=true mTimestamp=251636717595536(auto) mPendingTransactions.size=0 graphicBufferId=75003013891561 transform=0
+1794485206.161 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus true
+1794485206.161 10410 17463 17463 I HandWritingStubImpl: refreshLastKeyboardType: 1
+1794485206.161 10410 17463 17463 I HandWritingStubImpl: getCurrentKeyboardType: 1
+1794485206.197 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485206.209 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485206.913 10410 17463 17463 D DecorView[]: onWindowFocusChanged hasWindowFocus false
+1794485206.920 10410 17463 17577 I gralloc4: @set_metadata: update dataspace from GM (0x08010000 -> 0x00000000)
+1794485207.195 10410 17463 17463 D BLASTBufferQueue: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#161](f:0,a:1) destructor()
+1794485207.195 10410 17463 17463 D BufferQueueConsumer: [SurfaceView[nl.bw20.last_launcher/nl.bw20.last_launcher.MainActivity]#161(BLAST Consumer)161](id:4437000000a1,api:0,p:-1,c:17463) disconnect
+1794485207.201 10410 17463 17463 D BLASTBufferQueue: [VRI[MainActivity]#160](f:0,a:1) destructor()
+1794485207.201 10410 17463 17463 D BufferQueueConsumer: [VRI[MainActivity]#160(BLAST Consumer)160](id:4437000000a0,api:0,p:-1,c:17463) disconnect
