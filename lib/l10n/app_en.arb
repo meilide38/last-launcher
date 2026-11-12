@@ -1,0 +1,274 @@
+{
+  "@@locale": "en",
+  "appTitle": "Last Launcher",
+  "appTagline": "The last launcher you'll ever need",
+
+  "settings": "Settings",
+  "sectionAppearance": "Appearance",
+  "sectionHome": "Home",
+  "sectionAppDrawer": "App drawer",
+  "sectionTasks": "Tasks",
+  "sectionSupport": "Support",
+  "sectionAbout": "About",
+  "sectionSearch": "Search",
+  "sectionWork": "Work profile",
+
+  "themeTitle": "Theme",
+  "themeSystem": "System",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "themeExtra": "Extra",
+  "themeStyleTitle": "Style",
+  "themeStyleStandard": "Standard",
+  "themeStyleCustom": "Custom",
+  "fontTitle": "Font",
+  "fontStandard": "Standard",
+  "fontMono": "Monospace",
+  "textSizeTitle": "Text size",
+  "alignmentTitle": "Alignment",
+  "alignLeft": "Left",
+  "alignCenter": "Center",
+  "alignRight": "Right",
+  "accentColor": "Accent color",
+  "accentColorSubtitle": "Tint text and background with your system accent",
+  "terminalPrompt": "Terminal prompt",
+  "terminalPromptSubtitle": "Show search as a command line",
+  "sectionEffects": "Effects",
+  "effectsDarkOnly": "Dark mode only",
+  "glow": "Glow",
+  "scanlines": "Scanlines",
+  "scanlinesOff": "Off",
+  "scanlinesLight": "Light",
+  "scanlinesMedium": "Medium",
+  "scanlinesStrong": "Strong",
+  "animations": "Animations",
+  "animationsSubtitle": "Moving scanlines, glitches and a blinking cursor",
+
+  "hideStatusBar": "Fullscreen",
+  "hideStatusBarSubtitle": "Hide status bar and navigation",
+  "showHints": "Show hints",
+  "showHintsSubtitle": "Show usage hints throughout the app",
+
+  "hidePinnedApps": "Hide pinned apps",
+  "hidePinnedAppsSubtitle": "Hide pinned apps from the app drawer",
+  "includeHiddenInSearch": "Include hidden in search",
+  "includeHiddenInSearchSubtitle": "Let search also match hidden apps",
+  "matchOriginalName": "Match original name",
+  "matchOriginalNameSubtitle": "Find renamed apps by their original name",
+
+  "hiddenApps": "Hidden apps",
+  "hiddenAppsNone": "None",
+  "hiddenAppsCount": "{count} hidden",
+  "@hiddenAppsCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "noHiddenApps": "No hidden apps",
+
+  "leftOfHome": "Left module",
+  "rightOfHome": "Right module",
+  "panelNone": "None",
+  "lockLayout": "Lock layout",
+  "lockLayoutSubtitle": "Disable pinning and long press on the home screen",
+  "doubleTapToSleep": "Double tap to sleep",
+  "doubleTapToSleepSubtitle": "Requires accessibility service enabled in system settings",
+  "doubleTapToSleepDialogTitle": "Turn on accessibility service",
+  "doubleTapToSleepDialog": "This uses the AccessibilityService API to lock the screen when you double-tap. It does nothing else. You will be redirected to system settings to turn it on.",
+  "setAsDefault": "Set as default home app",
+  "setAsDefaultSubtitle": "Open the system picker",
+  "drawerMode": "Drawer mode",
+  "drawerModeList": "List",
+  "searchOnlyMode": "Search only",
+  "prefixNoApp": "No app can open this",
+  "prefixTypeWork": "Work apps",
+  "prefixTypePersonal": "Personal apps",
+  "searchPrefixes": "Search prefixes",
+  "searchPrefixesSubtitle": "Search the web or an app from the search field",
+  "prefixAdd": "Add prefix",
+  "prefixRestoreDefaults": "Restore work and personal prefixes",
+  "prefixTrigger": "Prefix",
+  "prefixTriggerShownAs": "Shown as {trigger}",
+  "@prefixTriggerShownAs": {
+    "placeholders": {
+      "trigger": {"type": "String"}
+    }
+  },
+  "prefixShadowWarning": "Apps starting with these letters can't be found while this is on. End it with a space, or start it with a symbol.",
+  "prefixName": "Name",
+  "prefixType": "Action",
+  "prefixTypeLink": "Open a link",
+  "prefixTypeSearchInApp": "Search in an app",
+  "prefixTemplates": "Start from",
+  "prefixLink": "Link",
+  "prefixLinkHelp": "%s is where the search goes",
+  "prefixOpenWith": "Open with",
+  "prefixAnyApp": "Any app",
+  "prefixApp": "App",
+  "prefixNoSearchApps": "No apps offer their own search",
+  "prefixPersonalAppsOnly": "Apps in the work profile can't be used here",
+  "prefixErrorEmpty": "Enter a prefix",
+  "prefixErrorTaken": "Another prefix already uses this",
+  "prefixErrorNoPlaceholder": "Put %s where the search goes",
+  "prefixTemplateMaps": "Maps",
+  "autoShowKeyboard": "Show keyboard",
+  "autoShowKeyboardAppsSubtitle": "Open keyboard when drawer opens",
+  "autoShowKeyboardTasksSubtitle": "Open keyboard when tasks open",
+  "autoLaunchOnMatch": "Auto-launch on match",
+  "autoLaunchOnMatchSubtitle": "Launch when one app matches",
+  "quickLaunchHints": "Quick launch hints",
+  "quickLaunchHintsSubtitle": "Highlight shortest unique characters to launch",
+  "extraChar": "Extra character",
+  "extraCharSubtitle": "Require an extra character before auto-launch",
+  "panelTasks": "tasks",
+  "panelLaunchApp": "Launch app",
+  "panelLaunchAppHint": "an app",
+  "launchAppLeft": "Left app",
+  "launchAppRight": "Right app",
+  "launchAppChoose": "Choose an app",
+  "launchAppOnlyLeft": "Only while this is the left module",
+  "launchAppOnlyRight": "Only while this is the right module",
+  "removeOnComplete": "Remove on complete",
+  "removeOnCompleteSubtitle": "Remove tasks when marked as done",
+  "clearCompletedDaily": "Clear completed daily",
+  "clearCompletedDailySubtitle": "Remove completed tasks at the end of the day",
+
+  "donate": "Donate",
+  "donateSubtitle": "Support the development of Last Launcher",
+  "rateApp": "Rate Last Launcher",
+  "rateAppSubtitle": "Leave a review on the Play Store",
+  "sendFeedback": "Send feedback",
+  "sendFeedbackSubtitle": "Email the developer",
+  "help": "Help",
+  "helpSubtitle": "Answers to common questions",
+  "version": "Version",
+  "license": "License",
+  "openSourceLicenses": "Open source licenses",
+  "aboutSubtitle": "Version and licenses",
+  "backupTitle": "Backup & restore",
+  "backupExport": "Export backup",
+  "backupExportSubtitle": "Save settings, labels, hidden and pinned apps to a file",
+  "backupRestore": "Restore backup",
+  "backupRestoreSubtitle": "Replace everything with a saved backup",
+  "backupAlsoInclude": "Also include",
+  "backupRestoreConfirm": "This replaces the current settings, labels, hidden and pinned apps.",
+  "backupExportAction": "Export",
+  "backupRestoreAction": "Restore",
+  "backupSaved": "Backup saved",
+  "backupRestored": "Backup restored",
+  "backupInvalid": "This file isn't a Last Launcher backup",
+  "backupTooNew": "This backup is from a newer version of Last Launcher",
+  "backupFailed": "Couldn't read or write the file",
+
+  "hintSwipeUp": "Swipe up for apps",
+  "hintSwipeRightFor": "Swipe right for {module}",
+  "@hintSwipeRightFor": {
+    "placeholders": {
+      "module": {"type": "String"}
+    }
+  },
+  "hintSwipeLeftFor": "Swipe left for {module}",
+  "@hintSwipeLeftFor": {
+    "placeholders": {
+      "module": {"type": "String"}
+    }
+  },
+  "hintLongPress": "Long press for settings",
+
+  "noResults": "No results",
+  "emptyTaskList": "Type to add a task",
+  "returnToAddTask": "Press return to add a task",
+
+  "actionRename": "Rename",
+  "actionUnpin": "Unpin",
+  "actionPin": "Pin",
+  "actionPinFull": "Full",
+  "actionHide": "Hide",
+  "actionUnhide": "Unhide",
+  "actionRemove": "Remove",
+  "actionMakeSubtask": "Make subtask",
+  "actionMakeMainTask": "Make main task",
+  "actionClose": "Close",
+  "actionAppInfo": "App info",
+  "actionEnable": "Enable",
+
+  "renameDialogTitle": "Rename",
+  "renameDialogCancel": "Cancel",
+  "renameDialogSave": "Save",
+
+  "showWorkAppDot": "Show work app dot",
+  "showWorkAppDotSubtitle": "Show a small dot in front of work profile apps",
+  "showWorkAppDotOnHome": "Show work dot on home screen",
+  "showWorkAppDotOnHomeSubtitle": "Show work profile dot on pinned home screen apps",
+
+  "hidePersonalWhenWorkActive": "Don't show non-work apps",
+  "hidePersonalWhenWorkActiveSubtitle": "Non-work apps reappear when work profile is paused",
+
+  "homeScreenFull": "Home screen is full",
+
+  "taskSourceTitle": "Tasks from",
+  "taskSourcePhone": "This phone",
+  "taskSourceList": "{list} in {app}",
+  "@taskSourceList": {
+    "placeholders": {
+      "list": {"type": "String"},
+      "app": {"type": "String"}
+    }
+  },
+  "taskSourceNoApp": "To use a task list that syncs with DAVx⁵, install Tasks.org first.",
+  "taskSourceNoLists": "There are no lists in {app} yet. Add one there first.",
+  "@taskSourceNoLists": {
+    "placeholders": {
+      "app": {"type": "String"}
+    }
+  },
+  "deleteSyncedDone": "Delete done tasks everywhere",
+  "deleteSyncedDoneSubtitle": "Remove on complete and Clear completed daily delete them from {app}, and every device it syncs with. When this is off, they're only hidden here.",
+  "@deleteSyncedDoneSubtitle": {
+    "placeholders": {
+      "app": {"type": "String"}
+    }
+  },
+  "taskSyncNoPermission": "Last Launcher may not read your tasks in {app}. Tap to allow it.",
+  "@taskSyncNoPermission": {
+    "placeholders": {
+      "app": {"type": "String"}
+    }
+  },
+  "taskSyncAppMissing": "{app} isn't installed. Tap to choose where your tasks come from.",
+  "@taskSyncAppMissing": {
+    "placeholders": {
+      "app": {"type": "String"}
+    }
+  },
+  "taskSyncListGone": "This list isn't in {app} any more. Tap to choose another.",
+  "@taskSyncListGone": {
+    "placeholders": {
+      "app": {"type": "String"}
+    }
+  },
+  "taskSyncFailed": "Couldn't read your tasks from {app}. Tap to try again.",
+  "@taskSyncFailed": {
+    "placeholders": {
+      "app": {"type": "String"}
+    }
+  },
+  "taskSyncNotSaved": "{app} didn't take your last change. Tap to see your tasks as they are there.",
+  "@taskSyncNotSaved": {
+    "placeholders": {
+      "app": {"type": "String"}
+    }
+  },
+  "taskSourceApp": "Lists in {app}",
+  "@taskSourceApp": {
+    "placeholders": {
+      "app": {"type": "String"}
+    }
+  },
+  "taskRepeats": "Repeats. Tick it off in {app}.",
+  "@taskRepeats": {
+    "placeholders": {
+      "app": {"type": "String"}
+    }
+  }
+}

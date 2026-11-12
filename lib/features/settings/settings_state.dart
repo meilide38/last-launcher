@@ -1,0 +1,433 @@
+import 'dart:async';
+
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:last_launcher/features/app_drawer/prefixes.dart';
+import 'package:last_launcher/features/modules/launcher_module.dart';
+import 'package:last_launcher/features/modules/none_module.dart';
+import 'package:last_launcher/features/modules/tasks_module.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+enum FontChoice { standard, mono }
+
+enum LabelAlignment { left, center, right }
+
+enum ScanlineLevel { off, light, medium, strong }
+
+/// A named bundle of look options. Derived from the options themselves:
+/// changing any one of them after picking a preset makes it [custom].
+enum ThemePreset { standard, extra, custom }
+
+class SearchPrefs {
+  const SearchPrefs({
+    required this.matchOriginal,
+    required this.includeHidden,
+    required this.hidePersonalWhenWorkActive,
+    this.prefixes = defaultPrefixes,
+  });
+
+  final bool matchOriginal;
+  final bool includeHidden;
+  final bool hidePersonalWhenWorkActive;
+  final List<SearchPrefix> prefixes;
+}
+
+/// One persisted setting. Assigning [value] stores it and notifies.
+class Setting<T> extends ValueNotifier<T> {
+  Setting(this.key, this._read, this._write) : super(_read());
+
+  /// SharedPreferences key the value lives under. Never rename one: it is
+  /// where existing users' choices are stored.
+  final String key;
+  final T Function() _read;
+  final Future<bool> Function(T) _write;
+
+  /// Picks up a value stored behind this setting's back, e.g. by a restore.
+  void reload() => super.value = _read();
+
+  @override
+  set value(T newValue) {
+    if (newValue == value) return;
+    super.value = newValue;
+    unawaited(_write(newValue));
+  }
+}
+
+/// All user settings.
+///
+/// Each setting is declared once below, with its key, type and default on one
+/// line. Rules that tie settings together are derived getters
+/// ([autoLaunchActive], [workAppDotActive], ...) and never writes, so what the
+/// user picked is kept as-is and comes back when the rule stops applying.
+///
+/// Listening to the whole object fires on any change; listen to a single
+/// [Setting] to react to just that one.
+class SettingsState extends ChangeNotifier {
+  SettingsState(this._prefs) {
+    _migrate();
+  }
+
+  final SharedPreferences _prefs;
+
+  // --- Appearance --------------------------------------------------------
+
+  late final themeMode = _enum(
+    'theme_mode',
+    ThemeMode.values,
+    ThemeMode.system,
+  );
+  late final font = _enum('font', FontChoice.values, FontChoice.standard);
+
+  /// Font size of app labels, in logical pixels, between [textSizeMin] and
+  /// [textSizeMax] in steps of [textSizeStep].
+  late final textSize = _double(
+    'text_size',
+    defaultTextSize,
+    min: textSizeMin,
+    max: textSizeMax,
+  );
+  static const textSizeMin = 18.0;
+  static const textSizeMax = 38.0;
+  static const textSizeStep = 2.0;
+  static const defaultTextSize = 28.0;
+  late final labelAlignment = _enum(
+    'label_alignment',
+    LabelAlignment.values,
+    LabelAlignment.left,
+  );
+  late final accentColor = _bool('accent_color', false);
+  late final terminalPrompt = _bool('terminal_prompt', false);
+  // Effects: only drawn in dark mode, where they were designed.
+  late final glow = _bool('glow', false);
+  late final scanlines = _enum(
+    'scanlines',
+    ScanlineLevel.values,
+    ScanlineLevel.off,
+  );
+  late final animations = _bool('animations', true);
+  late final hideStatusBar = _bool('hide_status_bar', false);
+  late final showHints = _bool('show_hints', true);
+
+  // --- Home --------------------------------------------------------------
+
+  late final locked = _bool('locked', false);
+  late final doubleTapToSleep = _bool('double_tap_to_sleep', true);
+  late final _leftPanel = _module('left_panel');
+  late final _rightPanel = _module('right_panel');
+
+  // --- App drawer and search ---------------------------------------------
+
+  late final hidePinnedFromDrawer = _bool('hide_pinned_from_drawer', true);
+  late final includeHiddenInSearch = _bool('include_hidden_in_search', false);
+  late final matchOriginalName = _bool('match_original_name', true);
+  late final searchOnly = _bool('search_only', false);
+  late final autoKeyboard = _bool('auto_keyboard', true);
+  late final autoLaunch = _bool('auto_launch', true);
+  late final extraChar = _bool('extra_char', false);
+  late final quickLaunchHints = _bool('quick_launch_hints', false);
+
+  /// Prefixes typed at the start of a search: profile filters, links and
+  /// app searches. Absent means the defaults; an empty list is a choice.
+  late final searchPrefixes = _track(
+    Setting<List<SearchPrefix>>(
+      'search_prefixes',
+      () =>
+          SearchPrefix.decodeList(_stored<String>('search_prefixes')) ??
+          defaultPrefixes,
+      (v) => _prefs.setString('search_prefixes', SearchPrefix.encodeList(v)),
+    ),
+  );
+
+  // --- Work profile ------------------------------------------------------
+
+  late final hidePersonalWhenWorkActive = _bool(
+    'hide_personal_when_work_active',
+    false,
+  );
+  late final showWorkAppDot = _bool('show_work_app_dot', true);
+  late final showWorkAppDotOnHome = _bool('show_work_app_dot_on_home', false);
+
+  // --- Launch app module -------------------------------------------------
+
+  /// Key of the entry each side opens ([AppInfo.key]); null for none yet.
+  late final launchAppLeft = _optionalString('launch_app_left');
+  late final launchAppRight = _optionalString('launch_app_right');
+
+  Setting<String?> launchApp(ModuleSide side) =>
+      side == ModuleSide.left ? launchAppLeft : launchAppRight;
+
+  // --- Tasks -------------------------------------------------------------
+
+  late final autoKeyboardTasks = _bool('auto_keyboard_tasks', true);
+  late final removeOnComplete = _bool('remove_on_complete', false);
+  late final clearCompletedDaily = _bool('clear_completed_daily', false);
+
+  /// Where the tasks are: unset for this phone, or a list in a tasks app
+  /// (see parseTaskSource). Its ids only mean something on this phone, so
+  /// it isn't backed up.
+  late final taskSource = _optionalString('task_source');
+
+  /// Whether Remove on complete and Clear completed daily delete done tasks
+  /// from a synced list, and so from the server, rather than hide them.
+  late final deleteSyncedDone = _bool('delete_synced_done', false);
+
+  // --- Derived: what is actually in effect -------------------------------
+
+  ThemePreset get preset {
+    final mono = font.value == FontChoice.mono;
+    if (mono &&
+        glow.value &&
+        scanlines.value == ScanlineLevel.medium &&
+        terminalPrompt.value &&
+        animations.value) {
+      return ThemePreset.extra;
+    }
+    if (!mono &&
+        !glow.value &&
+        scanlines.value == ScanlineLevel.off &&
+        !terminalPrompt.value) {
+      return ThemePreset.standard;
+    }
+    return ThemePreset.custom;
+  }
+
+  /// Sets every option a preset covers. Extra also switches to dark mode,
+  /// since its effects only show there.
+  void applyPreset(ThemePreset preset) {
+    switch (preset) {
+      case ThemePreset.extra:
+        themeMode.value = ThemeMode.dark;
+        font.value = FontChoice.mono;
+        glow.value = true;
+        scanlines.value = ScanlineLevel.medium;
+        terminalPrompt.value = true;
+        animations.value = true;
+      case ThemePreset.standard:
+        font.value = FontChoice.standard;
+        glow.value = false;
+        scanlines.value = ScanlineLevel.off;
+        terminalPrompt.value = false;
+      case ThemePreset.custom:
+        break;
+    }
+  }
+
+  /// Only scanlines (their sweep and glitches) and the terminal prompt (its
+  /// blinking cursor) move; with neither, there's nothing to animate.
+  bool get animationsAvailable =>
+      scanlines.value != ScanlineLevel.off || terminalPrompt.value;
+
+  bool get animationsActive => animationsAvailable && animations.value;
+
+  /// Search-only mode has no list to scroll, so the keyboard is always up.
+  bool get autoKeyboardActive => searchOnly.value || autoKeyboard.value;
+
+  /// Search-only mode always launches the single remaining match.
+  bool get autoLaunchActive => searchOnly.value || autoLaunch.value;
+
+  /// Extra character refines auto-launch, in either drawer mode. It matters
+  /// most in search-only mode, where no list shows what's been matched.
+  bool get extraCharAvailable => autoLaunchActive;
+
+  bool get extraCharActive => extraCharAvailable && extraChar.value;
+
+  /// Hints underline letters in the drawer's list, which search-only mode
+  /// doesn't show, and only mean something while auto-launch is on.
+  bool get quickLaunchHintsAvailable => !searchOnly.value && autoLaunch.value;
+
+  bool get quickLaunchHintsActive =>
+      quickLaunchHintsAvailable && quickLaunchHints.value;
+
+  /// With personal apps hidden there is nothing to tell work apps apart from.
+  bool get workAppDotAvailable => !hidePersonalWhenWorkActive.value;
+
+  bool get workAppDotActive => workAppDotAvailable && showWorkAppDot.value;
+
+  bool get workAppDotOnHomeActive =>
+      workAppDotActive && showWorkAppDotOnHome.value;
+
+  SearchPrefs get searchPrefs => SearchPrefs(
+    matchOriginal: matchOriginalName.value,
+    includeHidden: includeHiddenInSearch.value,
+    hidePersonalWhenWorkActive: hidePersonalWhenWorkActive.value,
+    prefixes: searchPrefixes.value,
+  );
+
+  /// Fires when anything in [searchPrefs] changes.
+  late final Listenable searchPrefsChanged = Listenable.merge([
+    matchOriginalName,
+    includeHiddenInSearch,
+    hidePersonalWhenWorkActive,
+    searchPrefixes,
+  ]);
+
+  /// Fires when anything that needs the whole [MaterialApp] rebuilt changes,
+  /// so routine settings don't rebuild the entire app.
+  late final Listenable appearanceChanged = Listenable.merge([
+    themeMode,
+    font,
+    textSize,
+    accentColor,
+    terminalPrompt,
+    glow,
+    scanlines,
+    animations,
+    hideStatusBar,
+  ]);
+
+  // --- Panels ------------------------------------------------------------
+
+  ValueListenable<LauncherModule> get leftPanel => _leftPanel;
+  ValueListenable<LauncherModule> get rightPanel => _rightPanel;
+
+  ValueListenable<LauncherModule> panel(ModuleSide side) =>
+      side == ModuleSide.left ? leftPanel : rightPanel;
+
+  void setLeftPanel(LauncherModule panel) =>
+      _setPanel(_leftPanel, _rightPanel, panel);
+
+  void setRightPanel(LauncherModule panel) =>
+      _setPanel(_rightPanel, _leftPanel, panel);
+
+  /// Most modules can only sit on one side, so taking one for one side
+  /// clears the other.
+  void _setPanel(
+    Setting<LauncherModule> side,
+    Setting<LauncherModule> other,
+    LauncherModule panel,
+  ) {
+    if (panel is! NoneModule &&
+        !panel.allowsBothSides &&
+        other.value.id == panel.id) {
+      other.value = const NoneModule();
+    }
+    side.value = panel;
+  }
+
+  // --- Migrations --------------------------------------------------------
+
+  /// Rewrites values stored by older versions, before any setting reads them.
+  /// Settings are created lazily, so doing this up front keeps each one's
+  /// initial value independent of which was created first.
+  void _migrate() {
+    // Extra used to be a fourth theme mode next to system, light and dark.
+    // It is now a preset of separate options, and was always shown dark.
+    // theme_style only ever existed in development builds.
+    final wasExtra =
+        _stored<String>('theme_mode') == 'extra' ||
+        _stored<String>('theme_style') == 'extra';
+    if (wasExtra) {
+      unawaited(_prefs.setString('theme_mode', ThemeMode.dark.name));
+      unawaited(_prefs.setString('font', FontChoice.mono.name));
+      unawaited(_prefs.setBool('glow', true));
+      unawaited(_prefs.setString('scanlines', ScanlineLevel.medium.name));
+      unawaited(_prefs.setBool('terminal_prompt', true));
+      unawaited(_prefs.setBool('animations', true));
+    }
+    unawaited(_prefs.remove('theme_style'));
+
+    // Development builds stored text size as small, medium or large.
+    final textSize = _prefs.get('text_size');
+    if (textSize is String) {
+      unawaited(
+        _prefs.setDouble('text_size', switch (textSize) {
+          'small' => 22.0,
+          'large' => 34.0,
+          _ => defaultTextSize,
+        }),
+      );
+    }
+
+    // Before either side was configurable there was only a tasks_enabled
+    // flag, which meant tasks on the left.
+    final panelsNeverChosen =
+        _stored<String>('left_panel') == null &&
+        _stored<String>('right_panel') == null;
+    if (panelsNeverChosen && (_stored<bool>('tasks_enabled') ?? false)) {
+      unawaited(_prefs.setString('left_panel', TasksModule().id));
+    }
+  }
+
+  // --- Declaration helpers -----------------------------------------------
+
+  /// The value stored under [key] if it has type [T], else null.
+  ///
+  /// SharedPreferences' typed getters throw when a key holds another type,
+  /// which happens when a different version of the app stored it: an older
+  /// build run after a newer one, or an unusual backup. A launcher must not
+  /// crash on that, so such a value reads as unset and the default applies.
+  T? _stored<T>(String key) {
+    final value = _prefs.get(key);
+    return value is T ? value : null;
+  }
+
+  Setting<bool> _bool(String key, bool fallback) => _track(
+    Setting(
+      key,
+      () => _stored<bool>(key) ?? fallback,
+      (v) => _prefs.setBool(key, v),
+    ),
+  );
+
+  /// Stored by name, so reordering an enum's values is safe; renaming one is
+  /// not.
+  Setting<T> _enum<T extends Enum>(String key, List<T> values, T fallback) =>
+      _track(
+        Setting(
+          key,
+          () => values.asNameMap()[_stored<String>(key)] ?? fallback,
+          (v) => _prefs.setString(key, v.name),
+        ),
+      );
+
+  /// A number, clamped to [min]..[max] when read so a stored value from
+  /// elsewhere (a backup, say) can't fall outside what the setting allows.
+  Setting<double> _double(
+    String key,
+    double fallback, {
+    required double min,
+    required double max,
+  }) => _track(
+    Setting(
+      key,
+      // An int is a fine number too, as JSON-restored values can be.
+      () => (_stored<num>(key)?.toDouble() ?? fallback).clamp(min, max),
+      (v) => _prefs.setDouble(key, v),
+    ),
+  );
+
+  /// A string that may be unset; setting null removes it.
+  Setting<String?> _optionalString(String key) => _track(
+    Setting(
+      key,
+      () => _stored<String>(key),
+      (v) => v == null ? _prefs.remove(key) : _prefs.setString(key, v),
+    ),
+  );
+
+  Setting<LauncherModule> _module(String key) => _track(
+    Setting(
+      key,
+      () => moduleById(_stored<String>(key)),
+      (m) => _prefs.setString(key, m.id),
+    ),
+  );
+
+  Setting<T> _track<T>(Setting<T> setting) {
+    setting.addListener(notifyListeners);
+    _created.add(setting);
+    return setting;
+  }
+
+  /// Settings are created on first use; these are the ones that exist.
+  final _created = <Setting<Object?>>[];
+
+  /// Re-reads everything from storage after it was replaced wholesale, e.g.
+  /// by restoring a backup. Settings not created yet read fresh anyway.
+  void reload() {
+    _migrate();
+    for (final setting in _created) {
+      setting.reload();
+    }
+  }
+}

@@ -1,0 +1,659 @@
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:last_launcher/features/app_drawer/app_list_state.dart';
+import 'package:last_launcher/features/app_drawer/prefixes.dart';
+import 'package:last_launcher/features/app_drawer/widgets/app_drawer_sheet.dart';
+import 'package:last_launcher/features/home/home_state.dart';
+import 'package:last_launcher/features/modules/launcher_module.dart';
+import 'package:last_launcher/features/modules/none_module.dart';
+import 'package:last_launcher/features/home/screens/home_screen.dart';
+import 'package:last_launcher/features/home/shell_gestures.dart';
+import 'package:last_launcher/features/settings/screens/settings_screen.dart';
+import 'package:last_launcher/features/settings/settings_state.dart';
+import 'package:last_launcher/features/settings/widgets/settings_tiles.dart';
+import 'package:last_launcher/features/modules/tasks/task_state.dart';
+import 'package:last_launcher/shared/data/app_channel.dart';
+import 'package:last_launcher/shared/data/models.dart';
+import 'package:last_launcher/shared/widgets/appearance_scope.dart';
+import 'package:last_launcher/l10n/app_localizations.dart';
+
+const _maxSheetFraction = 0.9;
+const _pageAnimDuration = Duration(milliseconds: 100);
+
+/// Sheet fractions within this of 0 or [_maxSheetFraction] count as settled.
+const _sheetSettledEpsilon = 0.01;
+
+/// Which of the two drags a pointer has committed to, if any. A pointer can
+/// only ever drive one of them, so this replaces a pair of booleans that could
+/// otherwise both be set.
+enum _DragMode { none, sheet, page }
+
+class LauncherShell extends StatefulWidget {
+  const LauncherShell({
+    required this.appChannel,
+    required this.homeState,
+    required this.appListState,
+    required this.settingsState,
+    required this.taskState,
+    super.key,
+  });
+
+  final AppChannel appChannel;
+  final HomeState homeState;
+  final AppListState appListState;
+  final SettingsState settingsState;
+  final TaskState taskState;
+
+  @override
+  State<LauncherShell> createState() => _LauncherShellState();
+}
+
+class _LauncherShellState extends State<LauncherShell>
+    with TickerProviderStateMixin, WidgetsBindingObserver {
+  final _homeKey = GlobalKey<HomeScreenState>();
+
+  // Sheet (vertical drawer).
+  double _sheetFraction = 0;
+  bool get _drawerOpen => _sheetFraction > _sheetSettledEpsilon;
+  late final AnimationController _sheetAnim;
+  double _sheetAnimFrom = 0;
+  double _sheetAnimTo = 0;
+
+  // Page (horizontal: -1 = left panel, 0 = home, +1 = right panel).
+  double _pageFraction = 0;
+  bool get _onHomePage => _pageFraction.abs() < 0.5;
+  late final AnimationController _pageAnim;
+  double _pageAnimFrom = 0;
+  double _pageAnimTo = 0;
+
+  // Pointer tracking.
+  int? _activePointer;
+  Offset? _pointerStart;
+  VelocityTracker? _velocityTracker;
+  _DragMode _dragMode = _DragMode.none;
+  double _dragStartFraction = 0;
+  bool _listWasAtTopOnDown = true;
+
+  // Double-tap tracking (outside gesture arena, zero delay).
+  DateTime? _lastTapTime;
+  Offset? _lastTapPosition;
+
+  // Whether the app list is scrolled to the top.
+  final _listIsAtTop = ValueNotifier<bool>(true);
+
+  // Whether a reorder drag or list scroll is in progress.
+  bool _isReorderingTasks = false;
+  bool _isReorderingHome = false;
+
+  late final VoidCallback _onOpenSettingsHandler;
+  late final VoidCallback _onGoHomeHandler;
+
+  @override
+  void initState() {
+    super.initState();
+    _onOpenSettingsHandler = _openSettings;
+    _onGoHomeHandler = _goHome;
+    WidgetsBinding.instance.addObserver(this);
+    _sheetAnim = AnimationController(vsync: this, duration: Duration.zero)
+      ..addListener(() {
+        final t = Curves.easeOut.transform(_sheetAnim.value);
+        setState(() {
+          _sheetFraction = _sheetAnimFrom + (_sheetAnimTo - _sheetAnimFrom) * t;
+        });
+      });
+    _pageAnim = AnimationController(vsync: this, duration: _pageAnimDuration)
+      ..addListener(() {
+        final t = Curves.easeOut.transform(_pageAnim.value);
+        setState(() {
+          _pageFraction = _pageAnimFrom + (_pageAnimTo - _pageAnimFrom) * t;
+        });
+      });
+    widget.appChannel.onOpenSettings = _onOpenSettingsHandler;
+    widget.appChannel.onGoHome = _onGoHomeHandler;
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (!mounted) return;
+      if (await widget.appChannel.consumePendingOpenSettings()) {
+        if (mounted) _openSettings();
+      }
+    });
+  }
+
+  void _openSettings() {
+    pushSettingsPage(
+      context,
+      SettingsScreen(
+        settingsState: widget.settingsState,
+        appListState: widget.appListState,
+        homeState: widget.homeState,
+        appChannel: widget.appChannel,
+        moduleDeps: _moduleDeps,
+        onRestored: _reloadAfterRestore,
+      ),
+    );
+  }
+
+  /// A restore replaced everything that's stored; have every state re-read
+  /// it rather than asking the user to restart the launcher.
+  void _reloadAfterRestore() {
+    widget.settingsState.reload();
+    widget.appListState.reload();
+    widget.homeState.reload();
+    widget.taskState.reload();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    // A file picker opened from settings pauses the launcher too, but the
+    // user is coming straight back to where they were.
+    if (widget.appChannel.awaitingResult) return;
+    if (state == AppLifecycleState.hidden ||
+        state == AppLifecycleState.paused) {
+      _resetToHome();
+    }
+  }
+
+  /// The user pressed home. Unwind to the home page in one step, wherever
+  /// they were: a pushed route, a side panel or the app drawer. Deliberately
+  /// takes the same route as the back gesture rather than [_resetToHome],
+  /// which snaps rather than animates because nothing is on screen to see it.
+  void _goHome() {
+    final navigator = Navigator.of(context);
+    if (navigator.canPop()) {
+      navigator.popUntil((route) => route.isFirst);
+    }
+    _dismissPanelActions();
+    if (_drawerOpen) _closeDrawer();
+    if (!_onHomePage) _animatePageTo(0);
+  }
+
+  /// Closes any open row action bar on the home grid and both side panels.
+  void _dismissPanelActions() {
+    _homeKey.currentState?.dismissActions();
+    widget.settingsState.leftPanel.value.dismissActions();
+    widget.settingsState.rightPanel.value.dismissActions();
+  }
+
+  void _resetToHome() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final navigator = Navigator.of(context);
+      if (navigator.canPop()) {
+        navigator.popUntil((route) => route.isFirst);
+      }
+    });
+    _sheetAnim.stop();
+    _pageAnim.stop();
+    setState(() {
+      _sheetFraction = 0;
+      _sheetAnimTo = 0;
+      _pageFraction = 0;
+      _pageAnimTo = 0;
+    });
+    // Defensive: clear reorder flags in case onReorderEnd was missed
+    // (e.g. activity backgrounded mid-drag). The rare panel-changed-mid-drag
+    // case is accepted; user can recover by backgrounding the app.
+    _isReorderingHome = false;
+    _isReorderingTasks = false;
+    widget.appListState.clearFilter();
+    _dismissPanelActions();
+  }
+
+  @override
+  void dispose() {
+    if (widget.appChannel.onOpenSettings == _onOpenSettingsHandler) {
+      widget.appChannel.onOpenSettings = null;
+    }
+    if (widget.appChannel.onGoHome == _onGoHomeHandler) {
+      widget.appChannel.onGoHome = null;
+    }
+    WidgetsBinding.instance.removeObserver(this);
+    _sheetAnim.dispose();
+    _pageAnim.dispose();
+    _listIsAtTop.dispose();
+    super.dispose();
+  }
+
+  // --- Sheet animation ---
+
+  void _animateSheetTo(double target) {
+    _sheetAnimFrom = _sheetFraction;
+    _sheetAnimTo = target;
+    _sheetAnim.forward(from: 0);
+  }
+
+  void _closeDrawer() {
+    _animateSheetTo(0);
+    widget.appListState.clearFilter();
+  }
+
+  // --- Page animation ---
+
+  void _animatePageTo(double target) {
+    _pageAnimFrom = _pageFraction;
+    _pageAnimTo = target;
+    _pageAnim.forward(from: 0);
+  }
+
+  void _launchApp(
+    String packageName, {
+    bool isWorkApp = false,
+    String? shortcutId,
+  }) {
+    widget.appChannel.launchApp(
+      packageName,
+      isWorkApp: isWorkApp,
+      shortcutId: shortcutId,
+    );
+    _closeDrawer();
+  }
+
+  /// Runs a prefix action from the drawer. When no app can take it, says so
+  /// and leaves the drawer open with the query intact.
+  Future<void> _runAction(PrefixMatch match) async {
+    final query = match.argument.trim();
+    final opened = await switch (match.prefix.action) {
+      final OpenLink link => widget.appChannel.openLink(
+        link.linkFor(query),
+        package: link.openWith,
+      ),
+      SearchInApp(:final package) => widget.appChannel.searchInApp(
+        package,
+        query,
+      ),
+      FilterApps() => Future.value(false),
+    };
+    if (!mounted) return;
+    if (opened) {
+      _closeDrawer();
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(AppLocalizations.of(context)!.prefixNoApp)),
+      );
+    }
+  }
+
+  /// Unpins a shortcut from the launcher, and from home if it was there.
+  Future<void> _removeShortcut(AppInfo shortcut) async {
+    await widget.appChannel.removeShortcut(shortcut);
+    await widget.homeState.removeApp(shortcut.key);
+    await widget.appListState.loadApps();
+  }
+
+  void _openAppInfo(String packageName) {
+    widget.appChannel.openAppInfo(packageName);
+    _closeDrawer();
+  }
+
+  // --- Pointer handling ---
+
+  void _onPointerDown(PointerDownEvent event) {
+    if (_activePointer != null) return;
+    _activePointer = event.pointer;
+    _sheetAnim.stop();
+    _pageAnim.stop();
+    _pointerStart = event.position;
+    _velocityTracker = VelocityTracker.withKind(event.kind)
+      ..addPosition(event.timeStamp, event.position);
+    _dragMode = _DragMode.none;
+    _listWasAtTopOnDown = _listIsAtTop.value;
+
+    // Double-tap detection (outside gesture arena, no tap delay).
+    if (widget.settingsState.doubleTapToSleep.value &&
+        _onHomePage &&
+        !_drawerOpen &&
+        !_isReorderingHome &&
+        !_isReorderingTasks) {
+      final now = DateTime.now();
+      if (isDoubleTap(
+        lastTime: _lastTapTime,
+        lastPosition: _lastTapPosition,
+        now: now,
+        position: event.position,
+      )) {
+        _lastTapTime = null;
+        _lastTapPosition = null;
+        _handleDoubleTap();
+        return;
+      }
+      _lastTapTime = now;
+      _lastTapPosition = event.position;
+    }
+  }
+
+  void _onPointerMove(PointerMoveEvent event) {
+    if (event.pointer != _activePointer) return;
+    final start = _pointerStart;
+    if (start == null) return;
+    _velocityTracker?.addPosition(event.timeStamp, event.position);
+
+    final dy = start.dy - event.position.dy; // positive = upward
+    final dx = start.dx - event.position.dx; // positive = left
+    final hasLeft = widget.settingsState.leftPanel.value is! NoneModule;
+    final hasRight = widget.settingsState.rightPanel.value is! NoneModule;
+
+    if (_dragMode == _DragMode.none) {
+      switch (classifyDrag(
+        dx: dx,
+        dy: dy,
+        hasLeft: hasLeft,
+        hasRight: hasRight,
+        pageFraction: _pageFraction,
+        onHomePage: _onHomePage,
+        drawerOpen: _drawerOpen,
+        listWasAtTop: _listWasAtTopOnDown,
+        reorderingHome: _isReorderingHome,
+        reorderingTasks: _isReorderingTasks,
+      )) {
+        case DragStart.none:
+          return;
+        case DragStart.page:
+          _dragMode = _DragMode.page;
+          _dragStartFraction = _pageFraction;
+        case DragStart.sheet:
+          _dragMode = _DragMode.sheet;
+          _dragStartFraction = _sheetFraction;
+        case DragStart.quickSettings:
+          widget.appChannel.expandQuickSettings();
+          _cancelDoubleTap();
+          _resetPointer();
+          return;
+      }
+      _cancelDoubleTap();
+    }
+
+    if (_dragMode == _DragMode.page) {
+      final fraction = followDrag(
+        start: _dragStartFraction,
+        travel: dx,
+        extent: MediaQuery.sizeOf(context).width,
+        lower: hasLeft ? -1.0 : 0.0,
+        upper: hasRight ? 1.0 : 0.0,
+      );
+      setState(() => _pageFraction = fraction);
+    } else if (_dragMode == _DragMode.sheet) {
+      final fraction = followDrag(
+        start: _dragStartFraction,
+        travel: dy,
+        extent: MediaQuery.sizeOf(context).height,
+        lower: 0,
+        upper: _maxSheetFraction,
+      );
+      setState(() => _sheetFraction = fraction);
+    }
+  }
+
+  void _onPointerUp(PointerUpEvent event) {
+    if (event.pointer != _activePointer) return;
+    _velocityTracker?.addPosition(event.timeStamp, event.position);
+    // Flutter reports velocity along the screen axes; the fractions below grow
+    // as the finger moves up and to the left, so flip the sign.
+    final velocity =
+        -(_velocityTracker?.getVelocity().pixelsPerSecond ?? Offset.zero);
+    final mode = _dragMode;
+    _resetPointer();
+
+    if (mode == _DragMode.page) {
+      final vx = velocity.dx;
+      final delta = _pageFraction - _dragStartFraction;
+      final hasLeft = widget.settingsState.leftPanel.value is! NoneModule;
+      final hasRight = widget.settingsState.rightPanel.value is! NoneModule;
+      var target = pageSnapTarget(
+        start: _dragStartFraction,
+        delta: delta,
+        velocity: vx,
+        lower: hasLeft ? -1.0 : 0.0,
+        upper: hasRight ? 1.0 : 0.0,
+      );
+      // Arriving on a side: a module that acts instead of showing a panel
+      // sends us straight back home.
+      if (target != 0 && target != _dragStartFraction) {
+        final side = target < 0 ? ModuleSide.left : ModuleSide.right;
+        final module = side == ModuleSide.left
+            ? widget.settingsState.leftPanel.value
+            : widget.settingsState.rightPanel.value;
+        final stay = module.arrive(
+          side,
+          _moduleDeps,
+          (app) => _launchApp(
+            app.packageName,
+            isWorkApp: app.isWorkApp,
+            shortcutId: app.shortcutId,
+          ),
+        );
+        if (!stay) target = 0;
+      }
+      _animatePageTo(target);
+      return;
+    }
+
+    if (mode == _DragMode.sheet) {
+      switch (sheetSnap(
+        start: _dragStartFraction,
+        fraction: _sheetFraction,
+        velocity: velocity.dy,
+      )) {
+        case SheetSettle.open:
+          _animateSheetTo(_maxSheetFraction);
+        case SheetSettle.close:
+          _closeDrawer();
+        case SheetSettle.back:
+          _animateSheetTo(_dragStartFraction);
+      }
+      return;
+    }
+
+    // Resume interrupted sheet animation.
+    if (_sheetFraction > _sheetSettledEpsilon &&
+        _sheetFraction < _maxSheetFraction - _sheetSettledEpsilon) {
+      _animateSheetTo(_sheetAnimTo > 0 ? _maxSheetFraction : 0);
+      return;
+    }
+  }
+
+  void _onPointerCancel(PointerCancelEvent event) {
+    if (event.pointer != _activePointer) return;
+    switch (_dragMode) {
+      case _DragMode.sheet:
+        _closeDrawer();
+      case _DragMode.page:
+        _animatePageTo(_dragStartFraction);
+      case _DragMode.none:
+        break;
+    }
+    _cancelDoubleTap();
+    _resetPointer();
+  }
+
+  void _resetPointer() {
+    _activePointer = null;
+    _pointerStart = null;
+    _velocityTracker = null;
+    _dragMode = _DragMode.none;
+  }
+
+  void _cancelDoubleTap() {
+    _lastTapTime = null;
+    _lastTapPosition = null;
+  }
+
+  Future<void> _handleDoubleTap() async {
+    final alreadyEnabled = await widget.appChannel
+        .isAccessibilityServiceEnabled();
+    if (alreadyEnabled) {
+      await widget.appChannel.lockScreen();
+      return;
+    }
+    if (!mounted) return;
+    final l10n = AppLocalizations.of(context)!;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(l10n.doubleTapToSleepDialogTitle),
+        content: Text(l10n.doubleTapToSleepDialog),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: Text(l10n.renameDialogCancel),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            child: Text(l10n.actionEnable),
+          ),
+        ],
+      ),
+    );
+    if (confirmed == true) {
+      await widget.appChannel.openAccessibilitySettings();
+    }
+  }
+
+  late final _moduleDeps = ModuleDeps(
+    settingsState: widget.settingsState,
+    appListState: widget.appListState,
+    taskState: widget.taskState,
+  );
+
+  Widget _buildPanel(
+    LauncherModule panel, {
+    required bool isVisible,
+    required ModuleSide side,
+  }) {
+    return panel.build(
+      context,
+      LauncherModuleProps(
+        deps: _moduleDeps,
+        side: side,
+        isVisible: isVisible,
+        scrollLocked: _dragMode == _DragMode.page,
+        onReorderStart: () => _isReorderingTasks = true,
+        onReorderEnd: () => _isReorderingTasks = false,
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    final screenHeight = MediaQuery.sizeOf(context).height;
+    final sheetHeight = screenHeight * _sheetFraction;
+    final pageOffset = -screenWidth * (1 + _pageFraction);
+
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, _) {
+        if (didPop) return;
+        // Re-apply fullscreen: the predictive-back animation reveals the
+        // system bars and the OS doesn't always restore them cleanly when
+        // PopScope rejects the pop. Re-applying after each back gesture
+        // forces the bars hidden again.
+        if (widget.settingsState.hideStatusBar.value) {
+          widget.appChannel.setFullscreen(true);
+        }
+        if (_homeKey.currentState?.dismissActions() ?? false) return;
+        if (widget.settingsState.leftPanel.value.dismissActions()) return;
+        if (widget.settingsState.rightPanel.value.dismissActions()) return;
+        if (_drawerOpen) {
+          _closeDrawer();
+        } else if (!_onHomePage) {
+          _animatePageTo(0);
+        }
+      },
+      child: Listener(
+        behavior: HitTestBehavior.translucent,
+        onPointerDown: _onPointerDown,
+        onPointerMove: _onPointerMove,
+        onPointerUp: _onPointerUp,
+        onPointerCancel: _onPointerCancel,
+        child: SizedBox.expand(
+          child: Stack(
+            children: [
+              // Pages: [Left, Home, Right] sliding horizontally.
+              Positioned(
+                left: pageOffset,
+                top: 0,
+                bottom: 0,
+                width: screenWidth * 3,
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: screenWidth,
+                      height: screenHeight,
+                      child: _buildPanel(
+                        widget.settingsState.leftPanel.value,
+                        isVisible: _pageFraction < -0.5,
+                        side: ModuleSide.left,
+                      ),
+                    ),
+                    SizedBox(
+                      width: screenWidth,
+                      height: screenHeight,
+                      child: GestureDetector(
+                        behavior: HitTestBehavior.deferToChild,
+                        onLongPress: _openSettings,
+                        // Alignment is for home only; the rest stays left.
+                        child: ValueListenableBuilder(
+                          valueListenable: widget.settingsState.labelAlignment,
+                          builder: (context, alignment, child) =>
+                              AppearanceScope.of(context).withLabelAlign(
+                                switch (alignment) {
+                                  LabelAlignment.left => TextAlign.left,
+                                  LabelAlignment.center => TextAlign.center,
+                                  LabelAlignment.right => TextAlign.right,
+                                },
+                                child: child!,
+                              ),
+                          child: HomeScreen(
+                            key: _homeKey,
+                            homeState: widget.homeState,
+                            appListState: widget.appListState,
+                            settingsState: widget.settingsState,
+                            moduleDeps: _moduleDeps,
+                            onLaunch: _launchApp,
+                            onReorderStart: () => _isReorderingHome = true,
+                            onReorderEnd: () => _isReorderingHome = false,
+                            isActive: _onHomePage && !_drawerOpen,
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: screenWidth,
+                      height: screenHeight,
+                      child: _buildPanel(
+                        widget.settingsState.rightPanel.value,
+                        isVisible: _pageFraction > 0.5,
+                        side: ModuleSide.right,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              // App drawer (only on home page).
+              if (sheetHeight > 0 && _onHomePage)
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  height: sheetHeight,
+                  child: AppDrawerSheet(
+                    appListState: widget.appListState,
+                    homeState: widget.homeState,
+                    settingsState: widget.settingsState,
+                    isOpen:
+                        _sheetAnimTo == _maxSheetFraction &&
+                        _dragMode != _DragMode.sheet,
+                    isAtTop: _listIsAtTop,
+                    onLaunch: _launchApp,
+                    onOpenAppInfo: _openAppInfo,
+                    onRemoveShortcut: _removeShortcut,
+                    onRunAction: _runAction,
+                    onCloseDrawer: _closeDrawer,
+                  ),
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
